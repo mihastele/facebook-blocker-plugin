@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Blocker",
+  "version": "1.0",
+  "description": "Blocks access to facebook.com",
+  "icons": {
+    "128": "fbicon128.png"
+  },
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.facebook.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
